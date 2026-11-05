@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: devops-cicd-app
+    container_name: cicd-website
+    ports:
+      - "8081:80"
+    restart: unless-stopped
